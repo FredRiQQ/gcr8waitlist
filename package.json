@@ -1,23 +1,19 @@
-"scripts": {
-  "start": "node server.js"
-}
-
 {
-  "name": "monroe.html",
+  "name": "gcr8waitlist",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "G'cr8 Waitlist Website",
+  "main": "Server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "FredRiQQ",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "cors": "^2.8.6",
+    "cors": "^2.8.5",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
-    "nodemailer": "^9.0.3"
+    "nodemailer": "^7.0.5"
   }
 }
