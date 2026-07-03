@@ -41,9 +41,11 @@ app.use(express.json());
 
 app.use(express.static(__dirname));
 
+const path = require("path");
+
 app.get("/", (req, res) => {
 
-    res.sendFile(__dirname + "/monroe.html");
+    res.sendFile(path.join(__dirname, "monroe.html"));
 
 });
 
