@@ -1,9 +1,9 @@
 console.log("Server file loaded");
 const nodemailer = require("nodemailer");
-require("dotenv").config();
+const path = require("path");
+require("dotenv").config(); 
 console.log("Email:", process.env.EMAIL);
 console.log("PASSWORD loaded:", !!process.env.PASSWORD);
-
 
 const transporter = nodemailer.createTransport({
 
@@ -39,13 +39,11 @@ app.use(cors());
 app.use(express.json());
 
 
-app.use(express.static(__dirname));
-
-const path = require("path");
+app.use(express.static("public"));
 
 app.get("/", (req, res) => {
 
-    res.sendFile(path.join(__dirname, "index.html"));
+    res.sendFile(path.join(__dirname,"public","index.html"));
 
 });
 
@@ -135,9 +133,6 @@ app.post("/join", async (req, res)=>{
     }
 });
 
-app.listen(3000, () => {
-
-    console.log("🚀 G'Cr8 Server Running");
-    console.log("http://localhost:3000");
+module.exports = app;
 
 });

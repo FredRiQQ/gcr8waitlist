@@ -80,7 +80,7 @@
 
             try {
 
-                const response = await fetch("/join", {
+                const response = await fetch("/api/join", {
 
                     method: "POST",
 
