@@ -250,15 +250,27 @@
                 0 0 20px rgba(139, 92, 246, .25);
             }
 
-            ,form button{
-                background: #8b5cf6;
-                color: white;
-                border: none;
+            .form button{
+                width: 100%;
                 padding: 18px;
-                border-radius: 12px;
+                border: none;
+                border-radius: 16px;
+                background: linear-gradient(135deg,#7c3aed,#9333ea,#a855f7);
+                color: #ffffff;
                 font-size: 1rem;
                 font-weight: 700;
                 cursor: pointer;
+                transition: all .35s ease;
+                box-shadow: 0 12px 30px rgba(139, 92, 246, .35);
+            }
+
+            .form button:active{
+                transform: scale(.97);
+            }
+
+            .form button:disabled{
+                opacity: .7;
+                cursor: not-allowed;
             }
 
             .counter{
