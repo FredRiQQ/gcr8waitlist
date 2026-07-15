@@ -6,6 +6,110 @@
                 font-family: Arial, Helvetica, sans-serif;
             }
             
+            @media (max-width: 768px) {
+
+                .container{
+                    width:90%;
+                    margin:auto;
+                    padding:20px 0;
+                }
+                nav{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 15px;
+                    margin-bottom: 50px;
+                }
+
+                .logo img{
+                    width: 150px;
+                    height: auto;
+                }
+
+                #themeToggle{
+                    width: 45px;
+                    height: 45px;
+                    font-size: 18px;
+                }
+                .hero{
+                    text-align: center;
+                }
+                .hero h1{
+                    font-size: 2.3rem;
+                    line-height: 1.2;
+                }
+                .hero p{
+                    font-size: 16px;
+                    line-height: 1.8;
+                    margin-top: 20px;
+                }
+
+                .badge{
+                    margin: auto;
+                    margin-bottom: 20px;
+                    font-size: 14px;
+                }
+
+                .btn-group{
+                    justify-content: center;
+                    margin-top: 35px;
+                }
+                .primary-btn{
+                    width: 100%;
+                    text-align: center;
+                    padding: 16px;
+                }
+                .preview{
+                    margin-top: 50px;
+                }
+                .mockup img{
+                    width: 100%;
+                    border-radius: 20px;
+                }
+                .waitlist{
+                    margin-top: 60px;
+                    text-align: center;
+                }
+                .waitlist h2{
+                    font-size: 2rem;
+                }
+                .waitlist p{
+                    font-size: 16px;
+                }
+                .counter{
+                    margin: 20px auto;
+                }
+                .form{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 18px;
+                    margin-top: 35px;
+                }
+                .form-input{
+                    width: 100%;
+                    padding: 18px;
+                    font-size: 16px;
+                    box-sizing: border-box;
+                }
+                .form button{
+                    width: 100%;
+                    padding: 18px;
+                }
+                .footer{
+                    margin-top: 70px;
+                }
+                .footer-social{
+                    gap: 20px;
+                }
+
+                .footer-social a{
+                    width: 52px;
+                    height: 52px;
+                    font-size: 22px;
+                }
+                
+            }
+            
             body{
                 background:var(--bg);
                 color:var(--text);
@@ -17,19 +121,12 @@
                 max-width: 1200px;
                 margin: auto;
             }
-            @media (max-width:768px){
-
-                .logo img{
-
-                    width: 130px;
-                }
-            }
 
             nav{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                padding: 25px 35px;
+                padding: 25px 0;
                 position: relative;
                 top: 20px;
                 width: 92%;
@@ -326,4 +423,15 @@
             .footer p{
                 font-size: 1rem;
                 color:#8b8b8b;
+            }
+
+            .hidden{
+                opacity: 0;
+                transform: translateY(60px);
+                transition: all .8s ease;
+            }
+
+            .show{
+                opacity: 1;
+                transform: translateY(0);
             }
