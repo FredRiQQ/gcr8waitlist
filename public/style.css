@@ -22,8 +22,7 @@
                 }
 
                 .logo img{
-                    width: 150px;
-                    height: auto;
+                    width: 120px;
                 }
 
                 #themeToggle{
@@ -142,13 +141,14 @@
             .logo{
                 display: flex;
                 align-items: center;
-                text-decoration: none;
+                /* text-decoration: none; */
             }
             .logo img{
                 width: 170px;
+                max-width: 100%;
                 height: auto;
-                display: block;
-                transition: .35s ease;
+                /* display: block;
+                transition: .35s ease; */
             }
 
             .logo img:hover{
@@ -424,12 +424,12 @@
                 font-size: 1rem;
                 color:#8b8b8b;
             }
-
-            .hidden{
+            
+            /* .hidden{
                 opacity: 0;
                 transform: translateY(60px);
                 transition: all .8s ease;
-            }
+            } */
 
             .show{
                 opacity: 1;
